@@ -465,3 +465,13 @@ a {
 .page-wrapper > main {
   flex: 1;
 }
+
+.aguaboa{
+    background-color: #000000;
+}
+    
+
+.saolou{
+    background-color: #284ae0;
+    border: 5px solid #284ae0;
+}
