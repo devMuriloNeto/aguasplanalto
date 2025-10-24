@@ -20,3 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 });
+
+
+document.querySelectorAll('.year').forEach(ano =>{
+    const hoje = new Date();
+    const anoatual = hoje.getFullYear();
+    ano.textContent = `© ${anoatual}`;
+})
+
+
