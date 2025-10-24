@@ -82,7 +82,7 @@ a {
     font-weight: 600;
     transition: color 0.3s ease;
     position: relative;
-    padding-bottom: 4px;
+
 }
 .navbar-links a:hover {
     color: var(--color-water);
@@ -167,6 +167,38 @@ a {
     background-color: var(--color-light-blue);
 }
 
+/* medias */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 8vh 16px; /* Reduz o padding vertical e adiciona lateral */
+    text-align: left; /* Alinha à esquerda para parecer mais natural */
+}
+
+  .hero-overlay {
+    padding: 16px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 1.75rem; /* Reduz tamanho do título */
+    line-height: 1.3;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: 24px;
+    max-width: 100%; /* Garante que o texto não fique muito largo */
+  }
+
+  .btn-primary {
+    width: 100%; /* Botão ocupa largura total */
+    text-align: center;
+  }
+}
+
 /* Seções */
 .section {
     padding: 64px 0;
@@ -202,7 +234,7 @@ a {
 }
 /* Brands Scroller */
 .brands-section {
-     padding: 48px 0;
+     padding: 22px 0;
      margin: 32px 0;
      background-color: white;
      border-radius: 8px;
@@ -217,6 +249,7 @@ a {
     display: flex;
     width: max-content;
     animation: scroll 10s linear infinite;
+    height: 10vh;
 }
 .brand-logo {
     flex-shrink: 0;
@@ -243,6 +276,12 @@ a {
     100% { transform: translateX(-50%); }
 }
 
+@media (max-width: 768px) {
+    .brands-section h2 {
+        font-size: 3dvh;
+    }
+}
+
 /* Grid Layout */
 .grid {
     display: grid;
@@ -266,11 +305,11 @@ a {
 }
 .product-card img {
     width: 100%;
-    height: 380px; /* Aumentado para dar mais destaque */
+    height: 42dvh; /* Aumentado para dar mais destaque */
     object-fit: cover;
 }
 .product-card-content {
-    padding: 16px; /* Diminuído para reduzir o espaço do texto */
+    padding: 13px; /* Diminuído para reduzir o espaço do texto */
     text-align: center; /* Centralizado */
     flex-grow: 1;
     display: flex;
@@ -287,6 +326,29 @@ a {
     margin-top: 4px; /* Diminuído */
     font-size: 0.875rem; /* Diminuído */
 }
+
+/* media queries para product card mobile */
+
+@media (max-width: 768px) {
+  .product-card {
+    flex-direction: column;
+  }
+
+  .product-card img {
+    height: auto; /* Permite que a altura se ajuste automaticamente */
+    height: 60dvh; /* Limita a altura em dispositivos menores */
+  }
+
+  .product-card-content {
+    padding: 10px;
+  }
+
+  .product-card-title {
+    font-size: 1rem;
+  }
+}
+
+
 
 /* Sobre Nós Section */
 .about-section-content {
