@@ -1,6 +1,6 @@
 /* Reset e Estilos Globais */
 :root {
-    --color-water: #0077be;
+    --color-water: rgb(0, 119, 190);
     --color-deep-blue: #005689;
     --color-light-blue: #00b4db;
     --color-fresh: #00d4ff;
@@ -405,13 +405,12 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    margin-bottom: 8vh;
 }
 
 .services h2 {
     margin-bottom: 2.5rem;
     text-align: center;
-    margin-top: 32px;
+    margin-top: -32px;
 }
 
 .service-card {
@@ -426,13 +425,12 @@ a {
     transform: translateY(-10px);
     background: linear-gradient(135deg, white 0%, var(--color-muted) 100%);
 }
-.service-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    background: var(--gradient-water);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+
+.service-svg{
+    height: 10vh;
+    padding: 5px;
+    filter: brightness(0) saturate(100%) invert(28%) sepia(100%) saturate(1200%) hue-rotate(180deg);
+
 }
 
 
@@ -511,8 +509,8 @@ a {
     margin-bottom: 32px;
 }
 .btn-back:hover {
-    background-color: var(--color-light-blue);
-    color: var(--color-deep-blue);
+    background-color: #bdbcbc;
+    color: var(--color-text);
 }
 
 .btn-back .fa-arrow-left {
