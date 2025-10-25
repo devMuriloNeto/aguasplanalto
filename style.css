@@ -472,7 +472,15 @@ a {
     font-size: 0.875rem;
     margin-top: 4px;
 }
-/* Media Queries for Responsiveness */
+
+.anoecreditos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+/* Media Queries para responsividade */
 @media (min-width: 640px) {
     .grid-cols-sm-2 { grid-template-columns: repeat(2, 1fr); }
 }
@@ -487,9 +495,11 @@ a {
     .about-text { text-align: left; }
     .grid-cols-md-3 { grid-template-columns: repeat(3, 1fr); }
 }
+
 @media (min-width: 1024px) {
     .grid-cols-lg-4 { grid-template-columns: repeat(4, 1fr); }
 }
+
 /* Cabeçalho da Página de Produto */
 .product-page-header {
     text-align: center;
@@ -537,9 +547,3 @@ a {
     border: 5px solid #284ae0;
 }
 
-.anoecreditos{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 0.3rem;
-}
