@@ -124,15 +124,27 @@ a {
 }
 /* Hero Section */
 .hero {
+
+    height: 56%;
       
-    background: var(--gradient-water);
+    background-image: url(images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
     color: var(--color-white);
     padding: 16vh;
     text-align: center;
     position: relative;
     overflow: hidden;
     margin-bottom: 6vh;
+    
     }
+
+@media(max-width: 768px){
+    .hero {
+        
+    }
+}
 
 .hero-overlay {
     height: 100%;
@@ -148,11 +160,13 @@ a {
     font-weight: bold;
     margin-bottom: 16px;
     line-height: 1.2;
+    color: #000000;
 }
 .hero p {
     font-size: 1.125rem;
     margin-bottom: 32px;
     max-width: 48rem;
+    color: #000000;
 }
 .btn-primary {
     background-color: var(--color-water);
@@ -173,13 +187,15 @@ a {
   .hero {
     padding: 8vh 16px; /* Reduz o padding vertical e adiciona lateral */
     text-align: left; /* Alinha à esquerda para parecer mais natural */
+    background-position-x: -1px;
 }
 
   .hero-overlay {
-    padding: 16px;
+    padding: 10px;
     text-align: center;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
+    justify-content: start;
+    margin-top: -50px;
   }
 
   .hero h1 {
@@ -191,11 +207,13 @@ a {
     font-size: 1rem;
     margin-bottom: 24px;
     max-width: 100%; /* Garante que o texto não fique muito largo */
+    color: transparent;
   }
 
   .btn-primary {
     width: 100%; /* Botão ocupa largura total */
     text-align: center;
+    margin-top: 6em;
   }
 }
 
@@ -346,6 +364,7 @@ a {
   .product-card-title {
     font-size: 1rem;
   }
+  
 }
 
 
@@ -466,11 +485,19 @@ a {
     text-align: center;
 }
 .footer p {
+
     margin: 0;
 }
 .footer .text-sm {
     font-size: 0.875rem;
     margin-top: 4px;
+}
+
+@media(max-width: 768px) {
+    .footer .text-sm {
+    font-size: 0.8rem;
+    margin-top: 4px;
+}
 }
 
 .anoecreditos{
