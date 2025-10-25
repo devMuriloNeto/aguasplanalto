@@ -140,12 +140,6 @@ a {
     
     }
 
-@media(max-width: 768px){
-    .hero {
-        
-    }
-}
-
 .hero-overlay {
     height: 100%;
     display: flex;
