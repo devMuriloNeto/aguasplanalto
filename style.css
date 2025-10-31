@@ -184,14 +184,6 @@ a {
     background-position-x: -1px;
 }
 
-  .hero-overlay {
-    padding: 10px;
-    text-align: center;
-    align-items: start;
-    justify-content: start;
-    margin-top: -50px;
-  }
-
   .hero h1 {
     font-size: 1.75rem; /* Reduz tamanho do título */
     line-height: 1.3;
@@ -202,12 +194,6 @@ a {
     margin-bottom: 24px;
     max-width: 100%; /* Garante que o texto não fique muito largo */
     color: transparent;
-  }
-
-  .btn-primary {
-    width: 100%; /* Botão ocupa largura total */
-    text-align: center;
-    margin-top: 6em;
   }
 }
 
