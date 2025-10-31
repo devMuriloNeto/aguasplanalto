@@ -30,7 +30,7 @@ body {
     line-height: 1.6;
 }
 .container {
-    max-width: 1200px;
+    max-width: 1250px;
     margin: 0 auto;
     padding: 0 24px;
 }
@@ -512,28 +512,28 @@ a {
 
 
 /* Estilos para a seção customizada */
-.custom-section {
+.services-section {
     background: var(--gradient-water); /* Fundo de ponta a ponta */
     width: 100vw; /* Largura total da viewport */
     margin-left: calc(-50vw + 50%); /* Compensa para centralizar e evitar overflow */
     padding: 64px 0; /* Mantém o padding vertical da classe .section */
 }
 
-.custom-section .row {
+.services-section .row {
     display: flex;
     align-items: center;
     gap: 48px;
     margin-bottom: 48px; /* Espaço entre linhas */
 }
 
-.custom-section .image-left,
-.custom-section .image-right {
+.services-section .image-left,
+.services-section .image-right {
     flex: 1;
     max-width: 300px; /* Limita largura para responsividade */
 }
 
-.custom-section .image-left img,
-.custom-section .image-right img {
+.services-section .image-left img,
+.services-section .image-right img {
     width: 300px;
     height: 300px;
     object-fit: cover;
@@ -541,38 +541,38 @@ a {
     margin: 0 auto;
     display: block;
     border-radius: 8px; /* Opcional: arredonda cantos como nos cards */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Opcional: sombra como nos cards */
+      box-shadow: 20px 20px 0px #F2BA52; /* deslocamento X, Y, sem blur, cor sólida */
 }
 
-.custom-section .text-right,
-.custom-section .text-left {
+.services-section .text-right,
+.services-section .text-left {
     flex: 1;
     text-align: left; /* Alinhamento padrão; ajuste se necessário */
 }
 
-.custom-section .text-right h2,
-.custom-section .text-left h2 {
+.services-section .text-right h2,
+.services-section .text-left h2 {
     font-size: 1.875rem;
     font-weight: bold;
     color: #ffffff;
     margin-bottom: 16px;
 }
 
-.custom-section .text-right p,
-.custom-section .text-left p {
+.services-section .text-right p,
+.services-section .text-left p {
     line-height: 1.7;
     color: #ffffff;
 }
 
 /* Media query para mobile: empilha verticalmente */
 @media (max-width: 768px) {
-    .custom-section .row {
+    .services-section .row {
         flex-direction: column;
         gap: 24px;
     }
     
-    .custom-section .image-left img,
-    .custom-section .image-right img {
+    .services-section .image-left img,
+    .services-section .image-right img {
         width: 300px;
         height: 300px;
         object-fit: cover;
@@ -581,8 +581,9 @@ a {
         display: block;
     }
     
-    .custom-section .text-right,
-    .custom-section .text-left {
+    .services-section .text-right,
+    .services-section .text-left {
         text-align: center; /* Centraliza texto em mobile */
     }
 }
+
