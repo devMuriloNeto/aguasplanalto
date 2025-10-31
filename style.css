@@ -41,9 +41,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
-.hidden {
-    display: none;
-}
+
 /* Navbar */
 .navbar {
     position: fixed;
@@ -214,22 +212,6 @@ a {
     margin-bottom: 48px;
 }
 
-/* Brand Card */
-.brand-card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    padding: 24px;
-    text-align: center;
-}
-.brand-card img {
-    margin: 0 auto 16px auto;
-    height: 128px;
-}
-.brand-card-title {
-    font-size: 1.125rem;
-    font-weight: 600;
-}
 /* Brands Scroller */
 .brands-section {
      padding: 22px 0;
@@ -406,40 +388,6 @@ a {
     color: #374151;
 }
 
- /* Services Section */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.services h2 {
-    margin-bottom: 2.5rem;
-    text-align: center;
-    margin-top: -32px;
-}
-
-.service-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 15px;
-    text-align: center;
-    transition: transform 0.3s ease;
-    box-shadow: 0 10px 30px rgba(0, 119, 190, 0.1);
-}
-.service-card:hover {
-    transform: translateY(-10px);
-    background: linear-gradient(135deg, white 0%, var(--color-muted) 100%);
-}
-
-.service-svg{
-    height: 10vh;
-    padding: 5px;
-    filter: brightness(0) saturate(100%) invert(28%) sepia(100%) saturate(1200%) hue-rotate(180deg);
-
-}
-
-
 /* Floating WhatsApp Button */
 .whatsapp-button-float {
     position: fixed;
@@ -507,7 +455,6 @@ a {
     .about-section-content { flex-wrap: nowrap; }
     .about-image, .about-text { width: 50%; }
     .about-text { text-align: left; }
-    .grid-cols-md-3 { grid-template-columns: repeat(3, 1fr); }
 }
 
 @media (min-width: 1024px) {
