@@ -30,7 +30,7 @@ body {
     line-height: 1.6;
 }
 .container {
-    max-width: 1300px;
+    max-width: 1250px;
     margin: 0 auto;
     padding: 0 24px;
 }
@@ -185,14 +185,12 @@ a {
 
   .hero h1 {
     font-size: 1.75rem; /* Reduz tamanho do título */
-    line-height: 1.3;
   }
 
   .hero p {
     font-size: 1rem;
     margin-bottom: 24px;
     max-width: 100%; /* Garante que o texto não fique muito largo */
-    color: transparent;
   }
 }
 
@@ -342,7 +340,7 @@ a {
 /* Sobre Nós Section */
 .about-section-content {
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     align-items: center;
     gap: 48px;
 }
@@ -351,8 +349,8 @@ a {
 }
 .about-image img {
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    width: 100%;
+    box-shadow: -20px -20px 0px var(--color-water); /* deslocamento X, Y, sem blur, cor sólida */
+    width: 480px;
     height: auto;
     object-fit: cover;
 }
@@ -510,7 +508,7 @@ a {
 }
 
 
-/* Estilos para a seção customizada */
+/* Estilos para a seção serviços */
 .services-section {
     background: var(--gradient-water); /* Fundo de ponta a ponta */
     width: 100vw; /* Largura total da viewport */
@@ -540,13 +538,13 @@ a {
     margin: 0 auto;
     display: block;
     border-radius: 8px; /* Opcional: arredonda cantos como nos cards */
-      box-shadow: 20px 20px 0px #F2BA52; /* deslocamento X, Y, sem blur, cor sólida */
+    box-shadow: 20px 20px 0px #F2BA52; /* deslocamento X, Y, sem blur, cor sólida */
 }
 
 .services-section .text-right,
 .services-section .text-left {
     flex: 1;
-    text-align: left; /* Alinhamento padrão; ajuste se necessário */
+    text-align: justify; /* Alinhamento padrão; ajuste se necessário */
 }
 
 .services-section .text-right h2,
@@ -585,4 +583,3 @@ a {
         text-align: center; /* Centraliza texto em mobile */
     }
 }
-
