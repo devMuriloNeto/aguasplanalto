@@ -6,8 +6,9 @@
     --color-fresh: #00d4ff;
     --color-white: #ffffff;
     --color-muted: #e6f7ff;
+    --color-title-blue: #096BA8;
     --color-text: #333333;
-    --gradient-water: linear-gradient(59deg,rgba(35, 119, 204, 1) 0%, rgba(0, 255, 174, 1) 100%);
+    --gradient-water: linear-gradient(100deg,rgba(116, 170, 206, 1) 0%, rgba(40, 125, 178, 1) 50%, rgba(9, 107, 168, 1) 100%);
     --gradient-fresh: linear-gradient(135deg, var(--color-fresh), var(--color-light-blue));
 }
 
@@ -152,13 +153,13 @@ a {
     font-weight: bold;
     margin-bottom: 16px;
     line-height: 1.2;
-    color: #000000;
+    color: var(--color-white);
 }
 .hero p {
     font-size: 1.125rem;
     margin-bottom: 32px;
     max-width: 48rem;
-    color: #000000;
+    color: #ffffff;
 }
 .btn-primary {
     background-color: var(--color-water);
@@ -168,6 +169,7 @@ a {
     font-weight: bold;
     transition: background-color 0.3s ease;
     display: inline-block;
+    border: 2px solid white;
 }
 .btn-primary:hover {
     background-color: var(--color-light-blue);
@@ -204,7 +206,7 @@ a {
     font-weight: bold;
     text-align: center;
     margin-bottom: 16px;
-    color: #1f2937;
+    color: var(--color-title-blue);
 }
 .section-subtitle {
     text-align: center;
@@ -361,7 +363,7 @@ a {
 .about-text h2 {
     font-size: 1.875rem;
     font-weight: bold;
-    color: #1f2937;
+    color: var(--color-title-blue);
     margin-bottom: 16px;
 }
 .about-text p {
@@ -552,14 +554,14 @@ a {
 .custom-section .text-left h2 {
     font-size: 1.875rem;
     font-weight: bold;
-    color: #1f2937;
+    color: #ffffff;
     margin-bottom: 16px;
 }
 
 .custom-section .text-right p,
 .custom-section .text-left p {
     line-height: 1.7;
-    color: #4b5563;
+    color: #ffffff;
 }
 
 /* Media query para mobile: empilha verticalmente */
