@@ -30,7 +30,7 @@ body {
     line-height: 1.6;
 }
 .container {
-    max-width: 1250px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
 }
@@ -124,7 +124,6 @@ a {
 .hero {
 
     height: 56%;
-      
     background-image: var(--gradient-water);
     background-repeat: no-repeat;
     background-size: cover;
@@ -134,9 +133,9 @@ a {
     text-align: center;
     position: relative;
     overflow: hidden;
-    margin-bottom: 6vh;
-    
+    margin-bottom: 6vh;    
     }
+
 
 .hero-overlay {
     height: 100%;
@@ -153,6 +152,7 @@ a {
     margin-bottom: 16px;
     line-height: 1.2;
     color: var(--color-white);
+    
 }
 .hero p {
     font-size: 1.125rem;
@@ -283,13 +283,13 @@ a {
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
 .product-card img {
-    width: 300px;
     height: 300px;
     object-fit: cover;
     max-width: 100%;
     margin: 0 auto;
     display: block;
 }
+
 .product-card-content {
     padding: 13px; /* Diminuído para reduzir o espaço do texto */
     text-align: center; /* Centralizado */
@@ -352,6 +352,30 @@ a {
     height: auto;
     object-fit: cover;
 }
+
+.about-iframe {
+    width: 100%; /* Largura total do container */
+    height: 420px; /* Altura padrão para desktop */
+    overflow: hidden; /* Evita overflow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+}
+.about-iframe iframe {
+    width: 100%; /* Largura total do iframe */
+    height: 100%; /* Altura total do container */
+    border: none; /* Remove borda padrão */
+}
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .about-iframe {
+        height: 300px; /* Altura reduzida para mobile/tablet */
+    }
+}
+@media (max-width: 480px) {
+    .about-iframe {
+        height: 250px; /* Altura ainda menor para telas muito pequenas */
+    }
+}
+
 .about-text {
      text-align: center;
 }
@@ -365,24 +389,11 @@ a {
      margin-bottom: 24px;
      line-height: 1.7;
 }
-.location-card {
-    background-color: var(--color-muted);
-    border-radius: 8px;
-    padding: 24px;
-    text-align: center;
-    width: 100%;
-    max-width: 600px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-.location-card .fa-map-marker-alt {
-    font-size: 1.875rem;
-    color: var(--color-water);
-    margin-top: 4px;
-    margin-right: 16px;
-}
-.location-card h3 {
-    font-weight: 600;
-    color: #374151;
+.atend-section-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 48px;
 }
 
 /* Floating WhatsApp Button */
@@ -450,7 +461,7 @@ a {
     .whatsapp-button-float { display: none; }
     .hero h1 { font-size: 3rem; }
     .about-section-content { flex-wrap: nowrap; }
-    .about-image, .about-text { width: 50%; }
+    .about-image, .about-text, .about-iframe { width: 50%; }
     .about-text { text-align: left; }
 }
 
@@ -495,15 +506,26 @@ a {
   flex: 1;
 }
 
+ /* Aqui fica as class dos logos do carrosel */
 .aguaboa{
     background-color: #000000;
+    border: 1px solid #000000;
+    border-radius: 10px;
 }
     
+.bioleve{
+    height: 1px solid;
+    width: 150px;
+}
 
 .saolou{
-    background-color: #284ae0;
-    border: 5px solid #284ae0;
+    width: 1000px;
 }
+
+.crystal{
+    width: 1000px;
+}
+
 
 
 /* Estilos para a seção serviços */
@@ -581,3 +603,5 @@ a {
         text-align: center; /* Centraliza texto em mobile */
     }
 }
+
+
